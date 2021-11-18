@@ -1,0 +1,33 @@
+// See https://aka.ms/new-console-template for more information
+using System;
+namespace myProject{
+    public enum Gender
+    {
+        Unknown,
+        male,
+        female
+    }
+    class program
+    {
+        static void Main()
+        { 
+            Gender gender = (Gender)3;
+            System.Console.WriteLine();
+            
+               int[] p = (int[])Enum.GetValues(typeof(Gender));
+               foreach(int val in p)
+               {
+                   System.Console.WriteLine(val);
+               }
+
+               string[] str = Enum.GetNames(typeof(Gender));
+
+               foreach(string s in str)
+               {
+                   System.Console.WriteLine(s);
+               }
+
+
+        }
+    }
+}
