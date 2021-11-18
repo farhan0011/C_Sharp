@@ -1,0 +1,41 @@
+// See https://aka.ms/new-console-template for more information
+using System;
+using PATA = ProjectA.TeamA.ClassA;
+using PATB = ProjectB.TeamB.ClassB;
+namespace ProjectA
+{
+    namespace TeamA
+    {
+           class ClassA
+           {
+               public static void print()
+               {
+                   System.Console.WriteLine("Class A");
+               }
+           }
+    }
+}
+namespace ProjectB
+{
+    namespace TeamB
+    {
+           class ClassB
+           {
+               public static void print()
+               {
+                   System.Console.WriteLine("Class B");
+               }
+           }
+    }
+}
+    
+class program
+{
+    static void Main()
+    { 
+            
+          PATA.print();
+          PATB.print();
+    }
+}
+
